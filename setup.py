@@ -15,7 +15,7 @@ from distutils.extension import Extension
 from distutils import sysconfig
 
 # setup extra compilation and linking args
-extraLinkArgs = ["-s"]
+extraLinkArgs = []
 if sys.platform == "win32":
     import win32api
     extraLinkArgs.append("-Wl,--add-stdcall-alias")
@@ -45,13 +45,13 @@ extension = Extension(
 # perform the setup
 setup(
         name = "cx_bsdiff",
-        version = "1.1",
+        version = "HEAD",
         data_files = dataFiles,
         description = "Python interface for bsdiff",
         license = "See LICENSE.txt",
         long_description = "Python interface for bsdiff",
         author = "Anthony Tuininga",
         author_email = "anthony.tuininga@gmail.com",
-        url = "http://www.computronix.com/utilities.shtml",
+        url = "http://starship.python.net/crew/atuining",
         ext_modules = [extension])
 

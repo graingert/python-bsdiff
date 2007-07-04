@@ -1,10 +1,24 @@
 Metadata-Version: 1.0
 Name: cx_bsdiff
 Version: 1.1
-Summary: Python interface for bsdiff
-Home-page: http://www.computronix.com/utilities.shtml
 Author: Anthony Tuininga
-Author-email: anthony.tuininga@gmail.com
-License: See LICENSE.txt
-Description: Python interface for bsdiff
-Platform: UNKNOWN
+Author-email: anthony at computronix com
+Maintainer: Anthony Tuininga
+Maintainer-email: anthony at computronix com
+Home-page: http://starship.python.net/crew/atuining
+Download-url: https://sourceforge.net/project/showfiles.php?group_id=117351
+Summary: extension module for bsdiff
+License: BSD Protection License
+Description: permits binary diffing and patching like the bsdiff utility available from
+        http://www.daemonology.net/bsdiff
+Keywords: binary diff patch
+Platform: platform independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free To Use But Restricted
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
