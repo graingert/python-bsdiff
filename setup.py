@@ -14,13 +14,6 @@ from distutils.core import setup
 from distutils.extension import Extension
 from distutils import sysconfig
 
-# setup extra compilation and linking args
-extraLinkArgs = []
-if sys.platform == "win32":
-    import win32api
-    extraLinkArgs.append("-Wl,--add-stdcall-alias")
-    extraLinkArgs.append(win32api.GetModuleFileName(sys.dllhandle))
-
 # define the list of files to be included as documentation for Windows
 dataFiles = None
 if sys.platform in ("win32", "cygwin"):
@@ -39,7 +32,6 @@ if sys.platform in ("win32", "cygwin"):
 # setup the extension
 extension = Extension(
         name = "bsdiff",
-        extra_link_args = extraLinkArgs,
         sources = ["bsdiff.c"])
 
 # perform the setup
